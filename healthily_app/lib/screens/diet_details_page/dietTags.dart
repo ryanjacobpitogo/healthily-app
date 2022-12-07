@@ -4,9 +4,9 @@ import 'package:healthily_app/components/title_text.dart';
 import 'package:healthily_app/constants.dart';
 
 class DietTags extends StatefulWidget {
-  const DietTags({super.key, required this.onPress, required this.label, required this.icon});
+  const DietTags({super.key,  required this.label, required this.icon,  required this.onPress});
 
-  final Function() onPress;
+   final Function() onPress;
   final String label;
   final Widget icon;
 

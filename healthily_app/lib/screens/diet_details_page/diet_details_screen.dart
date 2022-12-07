@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:healthily_app/components/singular_botm_nav.dart';
 import 'package:healthily_app/components/title_text.dart';
-import 'package:healthily_app/main.dart';
 import 'package:healthily_app/screens/diet_details_page/dietTags.dart';
+import 'package:healthily_app/screens/trial.dart';
 //import 'package:healthily_app/components/title_text.dart';
 import '../../components/logo.dart';
 import '../../constants.dart';
@@ -10,8 +10,62 @@ import '../../constants.dart';
 // import 'components/input_field.dart';
 // import 'components/title_text.dart';
 
-class DietDetailsScreen extends StatelessWidget {
-  const DietDetailsScreen({super.key});
+List<Map<String, dynamic>>filterFoodscategory= [
+];
+
+List<Map<String, dynamic>> filteredFoods = [];
+
+List<Map<String, dynamic>> foods = [];
+
+
+var seen = <dynamic>{};
+
+class Diet extends StatefulWidget{
+  const Diet({super.key});
+
+ 
+ 
+ @override
+  DietDetailsScreen createState() => DietDetailsScreen();
+
+
+
+}
+
+class DietDetailsScreen extends State<Diet> {
+ 
+void filter(value){
+    List<Map<String, dynamic>> foods1 = [];
+     
+          setState(() {
+
+            foods1 = foods.where((element) => element['tag'].contains(value)).toList();
+           
+
+            // filteredFoods = ( foodlist.where((element) => element['tag'] == chosenTags.map((e) => e))).toList();
+            // filteredFoods.removeWhere((element) => !chosenTags.contains(element)).toList();
+            filteredFoods.addAll(foods1);
+           
+            print(filteredFoods);
+
+            
+          
+            filteredFoods = filteredFoods.toSet().toList();
+
+
+          });
+
+
+  }
+   
+        @override
+          void initState(){
+            setState(() {
+              foods = foodlist;
+            });
+            super.initState();
+}     
+  
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +106,14 @@ class DietDetailsScreen extends StatelessWidget {
                                   mainAxisSpacing: 30,
                                   childAspectRatio: (5.0 / 6.2),
                                   children: 
-                                    tagsList.map((element) => DietTags(label: element['tag'], icon: element['image'], onPress: (){},)).toList(),
+                                    tagsList.map((element) => DietTags(label: element['tag'], icon: element['image'], onPress: (){
+                                        
+                                     setState(() {
+                                            filter(element['tag']);
+
+                                     });
+
+                                    },)).toList(),
                                 ),
                               ),
                             
@@ -68,7 +129,16 @@ class DietDetailsScreen extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: SingularBottomNavigation(text: 'SELECT', onPress: (){}),
+      bottomNavigationBar: SingularBottomNavigation(text: 'SELECT', onPress: (){
+            
+          filterFoodscategory.addAll(filteredFoods);
+                  
+            filterFoodscategory = filterFoodscategory.where((element) => seen.add(element['type'])).toList();
+    
+            Navigator.of(context).push(
+                     MaterialPageRoute(builder: (context) => Trial()));
+  
+      }),
     );
   }
 }

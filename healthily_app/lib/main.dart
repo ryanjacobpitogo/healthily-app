@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/" route, build the LoginPage widget.
         '/': (context) => const LoginScreen(),
         // When navigating to the "/second" route, build the HomePage widget.
-        '/DietDetails': (context) => const DietDetailsScreen(),
+        '/DietDetails': (context) =>  const Diet(),
       },
       theme: ThemeData(
         //Default color scheme for most widgets

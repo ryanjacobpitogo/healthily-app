@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 // Color varianbles
@@ -76,7 +78,73 @@ List<Map<String, dynamic>> tagsList = [
     {"id": 4, "tag": "Chicken", "image": Image.asset("assets/tag_turkey.png")},
     {"id": 5, "tag": "No Milk", "image": Image.asset("assets/tag_milk.png")},
     {"id": 6, "tag": "No Sugar", "image": Image.asset("assets/tag_sugar.png")},
+    {"id": 7, "tag": "Beef", "image": Image.asset("assets/beef.png")},
+    {"id": 8, "tag": "Mushroom", "image": Image.asset("assets/mushroom.png")},
+    {"id": 10, "tag": "Seafood", "image": Image.asset("assets/Seafood.png")},
+    {"id": 11, "tag": "Fruit", "image": Image.asset("assets/fruits.png")},
+    {"id": 12, "tag": "Eggs", "image": Image.asset("assets/Eggs.png")},
+    {"id": 13, "tag": "Potato", "image": Image.asset("assets/potato.png")},
+    {"id": 14, "tag": "Wheat", "image": Image.asset("assets/wheat.png")},
+    {"id": 15, "tag": "Dairy", "image": Image.asset("assets/Dairy.png")},
 ];
+
+List<Map<String, dynamic>> foodlist = [
+  //pork
+    {"type": "Adobo","name":"Pork Adobo", "tag": "Pork", "image": AssetImage("assets/adobo.jpg")},
+    {"type": "Pork Chops", "name":"Pork chop", "tag": "Pork", "image": AssetImage("assets/FL_porkchops.jpg")},
+    {"type": "Braised Pork","name":"Braised Pork",  "tag": "Pork", "image": AssetImage("assets/FL_braisedpork.jpg")},
+    {"type": "Garlic Pork", "name":"Garlic Pork", "tag": "Pork", "image": AssetImage("assets/FL_garlicpork.jpg")},
+    {"type": " Grilled", "name":"Grilled Pork", "tag": "Pork", "image": AssetImage("assets/FL_grilledpork.jpg")},
+    
+    
+    
+    
+
+    //fish
+    {"type": "Fillet", "name":"Fish Fillet", "tag": "Fish", "image": AssetImage("assets/fillet.jpg")},
+    {"type": "Soup", "name":"Fish Soup", "tag": "Fish", "image": AssetImage("assets/soup.jpg")},
+    {"type": " Grilled", "name":"Grilled Fish", "tag": "Fish", "image": AssetImage("assets/FL_grilledpork.jpg")},
+    {"type": " Steamed", "name":"Steamed Fish", "tag": "Fish", "image": AssetImage("assets/FL_steamed.jpg")},
+
+
+    //Veg
+    {"type": "Soup","name":"Veg Soup", "tag": "Vegetable", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Salad","name":"Veg Salad", "tag": "Vegetable", "image": AssetImage("assets/salad.jpg")},
+    {"type": " Steamed", "name":"Steamed Veg", "tag": "Vegetable", "image": AssetImage("assets/FL_steamed.jpg")},
+
+
+    //chicken
+     {"type": "Inasal", "name":"Chicken Inasal", "tag":"Chicken","image": AssetImage("assets/inasal.jpg")},
+     {"type": "Fillet", "name":"Chicken Fillet", "tag":  "Chicken", "image": AssetImage("assets/fillet.jpg")},
+     {"type": "Soup", "name":"Chicken Soup", "tag": "Chicken", "image": AssetImage("assets/soup.jpg")},
+     {"type": "Burger", "name":"Chicken Burger", "tag": "Chicken", "image": AssetImage("assets/FL_burger.jpg")},
+
+     //beef
+     {"type": "Stew", "name":"Beef Stew", "tag": "Beef", "image": AssetImage("assets/soup.jpg")},
+     {"type": "Steak", "name":"Beef Steak", "tag": "Beef", "image": AssetImage("assets/steaked.jpg")},
+     {"type": "Burger", "name":"Beef Burger", "tag": "Beef", "image": AssetImage("assets/FL_burger.jpg")},
+
+     //mush
+    {"type": "Soup", "name":"Mushroom Soup", "tag": "Mushroom", "image": AssetImage("assets/soup.jpg")},
+
+    //Seafoods
+    {"type": "Shrimps", "name":"Shrimps", "tag": "Seafoods", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Soup", "name":"Crab Soup", "tag": "Seafoods", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Octopus", "name":"Crab Soup", "tag": "Seafoods", "image": AssetImage("assets/soup.jpg")},
+
+    //fruit
+    {"type": "Smoothie", "name":"fruit smoothie", "tag": "Fruits", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Salad", "name":"fruit salad", "tag": "Fruits", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Smoothie", "name":"fruit smoothie", "tag": "Fruits", "image": AssetImage("assets/soup.jpg")},
+    {"type": "Pie", "name":"fruit pie", "tag": "Fruits", "image": AssetImage("assets/soup.jpg")},
+  
+    //Eggs
+     {"type": "Boiled", "name":"Boiled egg", "tag": "Eggs", "image": AssetImage("assets/soup.jpg")},
+     {"type": "Scrambled", "name":"Scrambled egg", "tag": "Eggs", "image": AssetImage("assets/soup.jpg")},
+     
+];
+
+
 
 
 //Data list
