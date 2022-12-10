@@ -41,25 +41,24 @@ class Trial extends StatelessWidget{
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(8,50,0,10),
+                          const Padding(
+                            padding: EdgeInsets.fromLTRB(8,50,0,10),
                             child: Text("Suggestions", style: TextStyle(fontSize: 17),),
                           ),
                             SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
                               child: Row(
                                  children: 
-                                       filterFoodscategory.map((element) => Tempt(label: element['type'], image: element['image'],)).toList(),
+                                       filterFoodscategory.map((element) => Tempt(label: element['type'], image: element['image'], name: element['name'])).toList(),
                               ),
                             )
 
-                          
+
                             
                           
                         ],
                       ),
-                    ),
-                    const LogoText(showTxt: false, position: CrossAxisAlignment.center),
+                    )
                   ]
                 )
               ],

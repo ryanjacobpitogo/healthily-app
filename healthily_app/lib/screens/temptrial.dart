@@ -1,15 +1,21 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:healthily_app/screens/diet_details_page/diet_details_screen.dart';
+import 'package:healthily_app/screens/restaurantscreen.dart';
+
+// ignore: depend_on_referenced_packages
+
+
+
 
 class Tempt extends StatefulWidget {
+ 
 
-
-  const Tempt({super.key,  required this.label, required this.image});
+  const Tempt({super.key,  required this.label, required this.image, required this.name});
 
   final AssetImage image ;
   final String label;
+  final String name;
 
 
   @override
@@ -17,12 +23,43 @@ class Tempt extends StatefulWidget {
 }
 
 class _Tempt extends State<Tempt> {
-  
+ 
+ 
 
-  category(){
+
+
+   List<Map<String, dynamic>> filteredRes = [];
+  List<Map<String, dynamic>> filteredRec = [];
+
+
+
+
+
+
+  void filter(value){
+    List<Map<String, dynamic>> res = [];
+List<Map<String, dynamic>> recipe = [];
+     
+          setState(() {
+
+            res = filterRestaurants.where((element) => element['type'] == value).toList();
+            recipe = filterRecipes.where((element) => element['type'] == value).toList();
+
+            filteredRes.addAll(res);
+            filteredRes = filteredRes.toSet().toList();
+
+            filteredRec.addAll(recipe);
+            filteredRec = filteredRec.toSet().toList();
+           
+            
+          
+          
+          });
 
 
   }
+
+
 
 
   @override
@@ -44,8 +81,15 @@ class _Tempt extends State<Tempt> {
           color: Colors.white,  
         ),),
         ),
-      ),onTap:(){
-       print("you clicked me");
+      ),
+      onTap:(
+    
+
+      ){
+        
+          filter(widget.name);
+         
+           Navigator.of(context).push( MaterialPageRoute(builder: (context) =>  Res(filteredRes, filteredRec)));
       }
     );
   }

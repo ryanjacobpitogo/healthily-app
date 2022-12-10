@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:healthily_app/components/singular_botm_nav.dart';
 import 'package:healthily_app/components/title_text.dart';
+import 'package:healthily_app/recipes.dart';
 import 'package:healthily_app/screens/diet_details_page/dietTags.dart';
 import 'package:healthily_app/screens/trial.dart';
 //import 'package:healthily_app/components/title_text.dart';
@@ -9,6 +11,11 @@ import '../../constants.dart';
 // import 'components/login_button.dart';
 // import 'components/input_field.dart';
 // import 'components/title_text.dart';
+
+List<Map<String, dynamic>>filterRecipes= [
+];
+List<Map<String, dynamic>>filterRestaurants= [
+];
 
 List<Map<String, dynamic>>filterFoodscategory= [
 ];
@@ -19,6 +26,9 @@ List<Map<String, dynamic>> foods = [];
 
 
 var seen = <dynamic>{};
+
+
+ 
 
 class Diet extends StatefulWidget{
   const Diet({super.key});
@@ -33,13 +43,18 @@ class Diet extends StatefulWidget{
 }
 
 class DietDetailsScreen extends State<Diet> {
+
+
+
+ 
+
  
 void filter(value){
     List<Map<String, dynamic>> foods1 = [];
      
           setState(() {
 
-            foods1 = foods.where((element) => element['tag'].contains(value)).toList();
+            foods1 = foods.where((element) => element['tag'] == value).toList();
            
 
             // filteredFoods = ( foodlist.where((element) => element['tag'] == chosenTags.map((e) => e))).toList();
@@ -47,15 +62,31 @@ void filter(value){
             filteredFoods.addAll(foods1);
            
             print(filteredFoods);
-
             
-          
+            
             filteredFoods = filteredFoods.toSet().toList();
 
 
           });
 
 
+  }
+
+
+
+  void filterRes (value){
+   List<Map<String, dynamic>> res = [];
+   List<Map<String, dynamic>> rec = [];
+    setState(() {
+      res = restaurant.where((element) => element['type'] == value).toList();
+      filterRestaurants.addAll(res);
+
+      rec = reci.where((element) => element['type'] == value).toList();
+      filterRecipes.addAll(rec);
+    
+
+
+    });
   }
    
         @override
@@ -134,9 +165,11 @@ void filter(value){
           filterFoodscategory.addAll(filteredFoods);
                   
             filterFoodscategory = filterFoodscategory.where((element) => seen.add(element['type'])).toList();
+
+            filteredFoods.map((e) => filterRes(e['name'])).toList();
     
             Navigator.of(context).push(
-                     MaterialPageRoute(builder: (context) => Trial()));
+                     MaterialPageRoute(builder: (context) => const Trial()));
   
       }),
     );
