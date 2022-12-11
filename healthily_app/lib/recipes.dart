@@ -215,12 +215,6 @@ List <Map<String,dynamic>> reci = [
      'image': 'https://i.ibb.co/SvzDNrJ/Fish-Soup-03-1.jpg',
      //https://izzycooking.com/fish-soup/
   },
-  {
-    'type' : 'Fish Soup','name': 'FISH SOUP','auth' : ' Izzy ',
-     'time': '45 mins','cal': '318kcal',
-     'image': 'https://i.ibb.co/SvzDNrJ/Fish-Soup-03-1.jpg',
-     //https://izzycooking.com/fish-soup/
-  },
 
 //Veg soup
  {
@@ -238,7 +232,7 @@ List <Map<String,dynamic>> reci = [
    {
     'type' : 'Veg Soup','name': 'Turnip and Zucchini Soup','auth' : 'NDTV Food',
      'time': '40 mins','cal': '118kcal',
-     'image': 'https://i.ibb.co/hyvzJW9/fim41u6o-soup-625x300-23-October-18.jpgg',
+     'image': 'https://i.ibb.co/hyvzJW9/fim41u6o-soup-625x300-23-October-18.jpg',
      //https://food.ndtv.com/recipe-turnip-and-zucchini-soup-339997
   },
  {

@@ -1,23 +1,19 @@
-class RecipeModel {
-  String label;
-  String image;
-  String source;
-  String url;
-  List<dynamic> ingredients;
+class AccM {
+   String username;
+   String password;
+   String token;
 
-  RecipeModel(
-      {required this.image,
-      required this.label,
-      required this.source,
-      required this.url,
-      required this.ingredients});
 
-  factory RecipeModel.fromMap(Map<String, dynamic> parsedJson) {
-    return RecipeModel(
-        url: parsedJson["url"],
-        image: parsedJson["image"],
-        label: parsedJson["label"],
-        source: parsedJson["source"],
-        ingredients: parsedJson["ingredients"]);
-  }
+
+  AccM(
+      { required this.username,
+       required this.password,
+       required this.token,
+    });
+
+
+get usern => username;
+get usep => password;
+get tok => token;
+
 }

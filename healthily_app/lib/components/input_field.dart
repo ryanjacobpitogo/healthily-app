@@ -5,7 +5,7 @@ import 'package:healthily_app/constants.dart';
 
 class InputField extends StatelessWidget {
   const InputField({
-    Key? key, required this.label,
+    Key? key, required this.label, required controller,
   }) : super(key: key);
 
   final String label;

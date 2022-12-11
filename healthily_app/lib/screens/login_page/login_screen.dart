@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthily_app/screens/recipemodel.dart';
 //import 'package:healthily_app/components/title_text.dart';
 import '../../components/logo.dart';
 import '../../constants.dart';
@@ -7,10 +8,23 @@ import '../../constants.dart';
 // import 'components/title_text.dart';
 import 'login_container.dart';
 
+
+
+List<Map <String , dynamic>> account = [{
+  'usern' : "123",
+  'passw': "123",
+  // 'token': String,
+}
+];
+
+
+
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({
     Key? key,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
