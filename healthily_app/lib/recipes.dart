@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 List <Map<String,dynamic>> reci = [
   {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'Vanjo Moreno',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'Vanjo Moreno',
      'time': '1 hour 10 minutes','cal': '211kcal',
      'image': 'https://i.ibb.co/KwsjpTG/Pork-Adobo.jpg',
      //https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/
@@ -12,7 +12,7 @@ List <Map<String,dynamic>> reci = [
   },
   
   {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'Liza Agbanlog',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'Liza Agbanlog',
      'time': '1 hour 10 minutes','cal': '239.93 kcal',
      'image': 'https://i.ibb.co/ynFvyhK/Pork-Adobo-2-jpg.webp',
      //https://salu-salo.com/pork-adobo/
@@ -20,7 +20,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'June Xie',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'June Xie',
      'time': '2 hrs','cal': '250 kcal',
      'image': 'https://i.ibb.co/QYpbXr4/pork-adobo-1-jpg-1654712703.jpg',
      //https://www.delish.com/cooking/recipe-ideas/a40119787/pork-adobo-recipe/
@@ -28,7 +28,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'BEBS',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'BEBS',
      'time': '1 hr 15 mins','cal': '220 kcal',
      'image': 'https://i.ibb.co/bLCgQHM/pork-adobo.jpg',
      //https://www.foxyfolksy.com/pork-adobo-recipe/
@@ -36,7 +36,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'Pilipinas Recipe',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'Pilipinas Recipe',
      'time': '45 mins','cal': '200 kcal',
      'image': 'https://i.ibb.co/VLD6JmB/Adobong-Baboy-Recipe.jpg',
      //https://www.foodnetwork.com/recipes/food-network-kitchen/pork-belly-adobo-3362407
@@ -45,7 +45,7 @@ List <Map<String,dynamic>> reci = [
   },
    
    {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'Maryanne Cabrera',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'Maryanne Cabrera',
      'time': '40 MINUTES','cal': '193kcal',
      'image': 'https://i.ibb.co/71bLC87/pork-adobo-1-800x450.jpg',
      //https://www.lovefilipinofood.com/pork-adobo/
@@ -54,7 +54,7 @@ List <Map<String,dynamic>> reci = [
   },
 
  {
-    'type' : 'Pork Adobo','name': 'Pork Adobo','auth' : 'Lalaine Manalo',
+    'type' : "Pork Adobo",'name': "Pork Adobo",'auth' : 'Lalaine Manalo',
      'time': ' 1 hr 15 mins','cal': '193kcal',
      'image': 'https://i.ibb.co/60SpQ53/filipino-pork-adobo-5-730x1095.jpg',
      //https://www.kawalingpinoy.com/pork-adobo/
@@ -65,7 +65,7 @@ List <Map<String,dynamic>> reci = [
   
  //pork chop
   {
-    'type' : 'Pork chop','name': 'Baked Pork Chops','auth' : 'Food Network',
+    'type' : "Pork chop",'name': 'Baked Pork Chops','auth' : 'Food Network',
      'time': ' 40 min','cal': '193kcal',
      'image': 'https://i.ibb.co/Yp0y0jq/1487435385846.jpg',
      //https://www.foodnetwork.com/recipes/food-network-kitchen/baked-pork-chop-3631185
@@ -73,7 +73,7 @@ List <Map<String,dynamic>> reci = [
 
   },
  {
-    'type' : 'Pork chop','name': 'Breaded Pork Chops','auth' : 'Food Network',
+    'type' : "Pork chop",'name': 'Breaded Pork Chops','auth' : 'Food Network',
      'time': ' 50 min','cal': '220kcal',
      'image': 'https://i.ibb.co/RQ50R2y/1389218639113.jpg',
      //https://www.foodnetwork.com/recipes/food-network-kitchen/breaded-pork-chops-with-warm-apple-cabbage-slaw-3362216
@@ -81,7 +81,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork chop','name': 'Ranch Pork Chop ','auth' : 'REE DRUMMOND',
+    'type' : "Pork chop",'name': 'Ranch Pork Chop ','auth' : 'REE DRUMMOND',
      'time': ' 50 min','cal': '220kcal',
      'image': 'https://i.ibb.co/xgfzYY7/1534272447915.jpg',
      //https://www.foodnetwork.com/recipes/ree-drummond/ranch-pork-chop-sheet-pan-supper-5399499
@@ -89,7 +89,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork chop','name': 'Grilled Pork Chops ','auth' : 'SUNNY ANDERSON',
+    'type' : "Pork chop",'name': 'Grilled Pork Chops ','auth' : 'SUNNY ANDERSON',
      'time': ' 1 hr 15 min','cal': '220kcal',
      'image': 'https://i.ibb.co/8rG1tzS/1393206943617.jpg',
      //https://www.foodnetwork.com/recipes/sunny-anderson/easy-grilled-pork-chops-recipe-2106547
@@ -97,7 +97,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Pork chop','name': 'Pan Fried Pork Chops','auth' : ' REE DRUMMOND',
+    'type' : "Pork chop",'name': 'Pan Fried Pork Chops','auth' : ' REE DRUMMOND',
      'time': ' 25 min','cal': '220kcal',
      'image': 'https://i.ibb.co/mDXd8w8/1384789067362.jpg',
      //https://www.foodnetwork.com/recipes/ree-drummond/pan-fried-pork-chops-recipe-1989074
@@ -105,7 +105,7 @@ List <Map<String,dynamic>> reci = [
 
   },
  {
-    'type' : 'Pork chop','name': 'Lighter Fried Pork Chops','auth' : ' REE DRUMMOND',
+    'type' : "Pork chop",'name': 'Lighter Fried Pork Chops','auth' : ' REE DRUMMOND',
      'time': ' 16 min','cal': '200kcal',
      'image': 'https://i.ibb.co/G5HVRxP/as.jpg',
      //https://www.foodnetwork.com/recipes/ree-drummond/lighter-fried-pork-chop-3588765
@@ -115,7 +115,7 @@ List <Map<String,dynamic>> reci = [
 
 //grilled
  {
-    'type' : 'Grilled Pork','name': 'Grilled Pork Tenderloins','auth' : ' Betsy Carrington',
+    'type' : "Grilled Pork",'name': 'Grilled Pork Tenderloins','auth' : ' Betsy Carrington',
      'time': ' 30 min','cal': '196kcal',
      'image': 'https://i.ibb.co/McXFdm6/exps23008-FM153592-B03-10-4b-9.jpg',
      //https://www.tasteofhome.com/recipes/grilled-pork-tenderloins/
@@ -123,7 +123,7 @@ List <Map<String,dynamic>> reci = [
 
   },
  {
-    'type' : 'Grilled Pork','name': 'Potluck Spareribs','auth' : ' Sheri Kirkman',
+    'type' : "Grilled Pork",'name': 'Potluck Spareribs','auth' : ' Sheri Kirkman',
      'time': ' 2hrs','cal': '196kcal',
      'image': 'https://i.ibb.co/McXFdm6/exps23008-FM153592-B03-10-4b-9.jpg',
     //https://www.tasteofhome.com/recipes/potluck-spareribs/
@@ -131,7 +131,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Grilled Pork','name': 'Greek Pork Chops','auth' : ' Geri Lipczynski',
+    'type' : "Grilled Pork",'name': 'Greek Pork Chops','auth' : ' Geri Lipczynski',
      'time': ' 25 min','cal': '196kcal',
      'image': 'https://i.ibb.co/nc7s2VF/Greek-Pork-Chops-EXPS-SDJJ17-30883-C02-16-5b-3.jpg',
      //https://www.tasteofhome.com/recipes/greek-pork-chops/
@@ -139,7 +139,7 @@ List <Map<String,dynamic>> reci = [
 
   },
   {
-    'type' : 'Grilled Pork','name': 'Grilled Pork Tenderloins','auth' : 'Steve Ehrhart',
+    'type' : "Grilled Pork",'name': 'Grilled Pork Tenderloins','auth' : 'Steve Ehrhart',
      'time': ' 30 min','cal': '196kcal',
      'image': 'https://i.ibb.co/Xb5FFtQ/Flavorful-Grilled-Pork-Tenderloin-EXPS-SDJJ17-7259-C02-15-2b.jpg',
      //https://www.tasteofhome.com/collection/top-10-grilled-pork-recipes/
@@ -147,7 +147,7 @@ List <Map<String,dynamic>> reci = [
 
   },
    {
-    'type' : 'Grilled Pork','name': 'Provolone-Stuffed Pork Chops','auth' : 'Barbara Pletzke',
+    'type' : "Grilled Pork",'name': 'Provolone-Stuffed Pork Chops','auth' : 'Barbara Pletzke',
      'time': ' 30 min','cal': '196kcal',
      'image': 'https://i.ibb.co/r5LVrNY/Provolone-Stuffed-Pork-Chops-with-Tarragon-Vinaigrette-exps84067-TH2379797-A11-29-6b-C-RMS-3.jpg',
      //https://www.tasteofhome.com/recipes/flavorful-grilled-pork-tenderloin/
@@ -155,7 +155,7 @@ List <Map<String,dynamic>> reci = [
 
   },
     {
-    'type' : 'Grilled Pork','name': 'Ultimate Grilled Pork Chops','auth' : 'Matthew Hass',
+    'type' : "Grilled Pork",'name': 'Ultimate Grilled Pork Chops','auth' : 'Matthew Hass',
      'time': ' 30 min','cal': '196kcal',
      'image': 'https://i.ibb.co/LJfZvYv/Ultimate-Grilled-Pork-Chops-EXPS-GHTAM17-188376-C05-10-9b-15.jpg',
      //https://www.tasteofhome.com/recipes/flavorful-grilled-pork-tenderloin/

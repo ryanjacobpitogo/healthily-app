@@ -47,7 +47,7 @@ class Trial extends StatelessWidget{
                           ),
                             SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
-                              child: Row(
+                              child: Column(
                                  children: 
                                        filterFoodscategory.map((element) => Tempt(label: element['type'], image: element['image'], name: element['name'])).toList(),
                               ),
@@ -68,27 +68,7 @@ class Trial extends StatelessWidget{
       ),
 
     );
-    // 
-    // 
-    // 
-    // Scaffold(
-    //   body:    SizedBox(
-    //                           height: 700,
-    //                           width: double.infinity,
-    //                             child: GridView.count(
-    //                               physics: const ScrollPhysics(),
-
-    //                               crossAxisCount: 2,
-    //                               crossAxisSpacing: 15,
-    //                               mainAxisSpacing: 30,
-    //                               childAspectRatio: (5.0 / 6.2),
-    //                               children: 
-    //                                 filteredFoods.map((element) => Tempt(label: element['name'])).toList(),
-    //                             ),
-    //                           ),
-        
-    //   );
-
+   
 
 
 

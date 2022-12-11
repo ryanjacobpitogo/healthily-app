@@ -118,7 +118,7 @@ List<Map<String, dynamic>> foodlist = [
 
      //beef
      {"type": "Soup", "name":"Beef Soup", "tag": "Beef", "image": AssetImage("assets/soup.jpg")},
-     {"type": "Steak", "name":"Beef Steak", "tag": "Beef", "image": AssetImage("assets/steaked.jpg")},
+     {"type": "Steak", "name":"Beef Steak", "tag": "Beef", "image": AssetImage("assets/FL_steaked.jpg")},
   
 
      //mush

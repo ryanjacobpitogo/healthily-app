@@ -161,6 +161,7 @@ void filter(value){
         ),
       ),
       bottomNavigationBar: SingularBottomNavigation(text: 'SELECT', onPress: (){
+        print(filteredFoods.toList());
             
           filterFoodscategory.addAll(filteredFoods);
                   

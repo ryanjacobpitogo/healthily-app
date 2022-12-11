@@ -30,15 +30,21 @@ class _Tempt extends State<Tempt> {
 
    List<Map<String, dynamic>> filteredRes = [];
   List<Map<String, dynamic>> filteredRec = [];
+    List<Map<String, dynamic>> filterCat = [];
 
-
+ 
 
 
 
 
   void filter(value){
     List<Map<String, dynamic>> res = [];
-List<Map<String, dynamic>> recipe = [];
+    List<Map<String, dynamic>> recipe = [];
+
+
+    
+
+    
      
           setState(() {
 
@@ -49,7 +55,7 @@ List<Map<String, dynamic>> recipe = [];
             filteredRes = filteredRes.toSet().toList();
 
             filteredRec.addAll(recipe);
-            filteredRec = filteredRec.toSet().toList();
+        
            
             
           
@@ -66,10 +72,10 @@ List<Map<String, dynamic>> recipe = [];
   Widget build(BuildContext context) {
     return  GestureDetector(
       child: Padding( 
-        padding: const EdgeInsets.only(left:8.0),
+        padding: const EdgeInsets.symmetric(horizontal:8.0, vertical: 10),
         child: Container(
-         width:150,
-         height: 100,
+         width: 400,
+         height: 150,
          decoration: BoxDecoration(
 
            image: DecorationImage(
@@ -86,8 +92,10 @@ List<Map<String, dynamic>> recipe = [];
     
 
       ){
-        
-          filter(widget.name);
+           filteredFoods.map((e) => widget.label == e['type'] ? filter(e['name']): null).toList();
+
+
+           print(filterCat.toList());
          
            Navigator.of(context).push( MaterialPageRoute(builder: (context) =>  Res(filteredRes, filteredRec)));
       }
