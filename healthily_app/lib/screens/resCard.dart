@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthily_app/resview.dart';
 
 
 class ResCard extends StatefulWidget {
@@ -52,7 +53,7 @@ class _ResCard extends State<ResCard> {
       
 
         ){
-      
+             Navigator.of(context).push( MaterialPageRoute(builder: (context) =>  Resview(label: widget.label, image: widget.image,name: widget.name,)));  
             
         }
       ),

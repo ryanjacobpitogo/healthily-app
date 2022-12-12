@@ -95,7 +95,7 @@ class _Tempt extends State<Tempt> {
            filteredFoods.map((e) => widget.label == e['type'] ? filter(e['name']): null).toList();
 
 
-           print(filterCat.toList());
+ 
          
            Navigator.of(context).push( MaterialPageRoute(builder: (context) =>  Res(filteredRes, filteredRec)));
       }

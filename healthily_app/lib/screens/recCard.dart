@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthily_app/recView.dart';
 
 
 class RecCard extends StatefulWidget {
@@ -49,12 +50,12 @@ class _RecCard extends State<RecCard> {
           ),
         ),
         onTap:(
-      
+          
 
         ){
       
-            
-        }
+           
+            Navigator.of(context).push( MaterialPageRoute(builder: (context) =>  Recview(label: widget.label, image: widget.image,name: widget.name,)));        }
       ),
     );
   }
